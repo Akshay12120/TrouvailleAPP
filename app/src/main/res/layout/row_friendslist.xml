@@ -17,30 +17,56 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txtTitle"
+        android:id="@+id/txtTvTitle"
+        style="@style/StyleSemiBold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="Jack"
-        style="@style/StyleSemiBold"
-        android:textColor="#3891A6"
+        android:text="@string/jack"
+        android:textColor="#63747F"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@id/image"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
 
     <TextView
-        android:id="@+id/subTitle"
+        android:id="@+id/txTvsubTitle"
+        style="@style/StyleRegular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="@string/sub"
-        style="@style/StyleRegular"
-        android:textColor="@color/tint"
+        android:text="@string/id"
+        android:textColor="#929495"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@id/image"
-        app:layout_constraintTop_toBottomOf="@id/txtTitle"
+        app:layout_constraintTop_toBottomOf="@id/txtTvTitle"
         app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/txTvlocation"
+        style="@style/StyleRegular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/location"
+        android:textColor="#929495"
+        app:layout_constraintStart_toEndOf="@id/image"
+        app:layout_constraintTop_toBottomOf="@id/txTvsubTitle" />
+
+    <Button
+        android:id="@+id/unfriendBtn"
+        style="@style/StyleRegular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectanglebutton"
+        android:text="Unfriend"
+        android:textColor="#63747F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toEndOf="@id/txTvsubTitle"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
