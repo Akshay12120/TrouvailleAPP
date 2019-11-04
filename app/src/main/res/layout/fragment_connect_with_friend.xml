@@ -6,7 +6,7 @@
     android:focusable="true"
     android:background="@color/colorWhite"
     android:clickable="true"
-    tools:context=".views.fragments.ConnectWithFriendFragment">
+    tools:context=".views.fragments.ConnectWithFriendTabLayoutFragment">
 
     <include layout="@layout/fragment_base_tab_layout"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

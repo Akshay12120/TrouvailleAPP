@@ -2,7 +2,7 @@ package com.app_knit.base.views.activities
 
 import android.content.Intent
 import com.app_knit.base.R
-import com.app_knit.base.views.fragments.ConnectWithFriendFragment
+import com.app_knit.base.views.fragments.ConnectWithFriendTabLayoutFragment
 
 
 class MainActivity : BaseAppCompactActivity() {
@@ -15,7 +15,7 @@ class MainActivity : BaseAppCompactActivity() {
 
     override fun init() {
 
-        doFragmentTransaction(fragManager = supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = ConnectWithFriendFragment())
+        doFragmentTransaction(fragManager = supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = ConnectWithFriendTabLayoutFragment())
         // check if app is restarted from launcher icon then close redundant activity
         if (!isTaskRoot
                 && intent.hasCategory(Intent.CATEGORY_LAUNCHER)
