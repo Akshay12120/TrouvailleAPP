@@ -6,8 +6,7 @@ data class BlogPost(
 
     var idname: String,
 
-
-    var loaction: String // Author of blog post
+    var loaction: String
 
 
 ) {

@@ -21,9 +21,9 @@ import kotlinx.android.synthetic.main.toolbar.*
  */
 class ConnectWithFriendFragment : BaseTabLayoutFragment() {
     override fun initTabs() {
-     val topTabspagerAdapter = TopTabspagerAdapter(activity!!.supportFragmentManager)
-        viewPager.adapter =topTabspagerAdapter
-        tabLayout.setupWithViewPager(viewPager)
+//     val topTabspagerAdapter = TopTabspagerAdapter(activity!!.supportFragmentManager)
+//        viewPager.adapter =topTabspagerAdapter
+//        tabLayout.setupWithViewPager(viewPager)
     }
 
     override val layoutId: Int
