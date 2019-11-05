@@ -10,8 +10,10 @@ import androidx.recyclerview.widget.RecyclerView
 
 import com.app_knit.base.R
 import com.app_knit.base.repository.models.DataSource
+import com.app_knit.base.repository.models.DataSourceNotification
 import com.app_knit.base.viewmodels.BaseViewModel
 import com.app_knit.base.views.adapters.FriendListAdapter
+import com.app_knit.base.views.adapters.NotificationListAdapter
 import kotlinx.android.synthetic.main.toolbar.*
 
 /**
@@ -26,13 +28,13 @@ class NotificationFragment : BaseRecyclerViewFragment() {
         tvToolbarTitle.text= "Notifications"
         tvToolbarTitle.setTextColor(resources.getColor(R.color.colorWhite))
         toolbar.setBackgroundColor(resources.getColor(R.color.maroon))
-        val data = DataSource.createDataset()
-        friendlistadapter.submitList(data)
+        val data = DataSourceNotification.createData()
+        notificationListAdapter.submitList(data)
     }
-    private val friendlistadapter = FriendListAdapter()
+    private val notificationListAdapter  = NotificationListAdapter()
 
     override val recyclerViewAdapter: RecyclerView.Adapter<*>?
-        get() = friendlistadapter
+        get() = notificationListAdapter
     override val layoutManager: RecyclerView.LayoutManager?
         get() = null
     override val isShowRecyclerViewDivider: Boolean

@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.Window
+import android.widget.Toolbar
 import androidx.fragment.app.FragmentManager
 
 import com.app_knit.base.R
@@ -32,6 +33,7 @@ class ConnectWithFriendTabLayoutFragment : BaseTabLayoutFragment() {
     override fun init() {
        //set the text of the toolbarTitle
         tvTitle.text = "Connect with Friends"
+
 
         //set the color of the text in  title of the toolbar
         tvTitle.setTextColor(resources.getColor(R.color.colorWhite))
