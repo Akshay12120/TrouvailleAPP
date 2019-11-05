@@ -21,9 +21,7 @@ import kotlinx.android.synthetic.main.toolbar.*
  */
 class ConnectWithFriendTabLayoutFragment : BaseTabLayoutFragment() {
     override fun initTabs() {
-//     val topTabspagerAdapter = TopTabspagerAdapter(activity!!.supportFragmentManager)
-//        viewPager.adapter =topTabspagerAdapter
-//        tabLayout.setupWithViewPager(viewPager)
+
     }
 
     override val layoutId: Int
@@ -38,12 +36,18 @@ class ConnectWithFriendTabLayoutFragment : BaseTabLayoutFragment() {
         tvTitle.setTextColor(resources.getColor(R.color.colorWhite))
         //set the textSize of toolbar
         tvTitle.textSize = 17f
+        //set the color of appbar layout color
         appBarLayout.setBackgroundColor(resources.getColor(R.color.maroon))
 
         val topTabspagerAdapter = TopTabspagerAdapter(activity!!.supportFragmentManager)
         viewPager.adapter =topTabspagerAdapter
+        //setup the ViewPager
         tabLayout.setupWithViewPager(viewPager)
-        tabLayout.getTabAt(0)(R.drawable.ic_friends_selected)
+        //set the icon of the tabs
+        tabLayout.getTabAt(0)!!.setIcon(R.drawable.ic_friends_selected)
+        tabLayout.getTabAt(1)!!.setIcon(R.drawable.ic_searchwhite)
+        tabLayout.getTabAt(2)!!.setIcon(R.drawable.ic_contact)
+        tabLayout.getTabAt(3)!!.setIcon(R.drawable.ic_request)
 
 
     }
