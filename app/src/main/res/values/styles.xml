@@ -96,6 +96,7 @@
         <item name="android:textAppearance">@style/TextAppearance.AppCompat.Subhead</item>
         <item name="android:textColor">@color/colorPrimaryText</item>
         <item name="android:includeFontPadding">false</item>
+
     </style>
 
     <!-- TextView Styles -->

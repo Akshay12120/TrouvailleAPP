@@ -3,10 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:focusable="true"
     android:background="@color/colorWhite"
     android:clickable="true"
     tools:context=".views.fragments.ConnectWithFriendTabLayoutFragment">
 
-    <include layout="@layout/fragment_base_tab_layout"/>
+    <include
+        android:id="@+id/include"
+        layout="@layout/fragment_base_tab_layout" />
+
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
