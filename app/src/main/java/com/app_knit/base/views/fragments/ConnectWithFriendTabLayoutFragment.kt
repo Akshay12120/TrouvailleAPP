@@ -32,6 +32,7 @@ class ConnectWithFriendTabLayoutFragment : BaseTabLayoutFragment() {
     override fun init() {
        //set the text of the toolbarTitle
         tvTitle.text = "Connect with Friends"
+
         //set the color of the text in  title of the toolbar
         tvTitle.setTextColor(resources.getColor(R.color.colorWhite))
         //set the textSize of toolbar
@@ -48,6 +49,7 @@ class ConnectWithFriendTabLayoutFragment : BaseTabLayoutFragment() {
         tabLayout.getTabAt(1)!!.setIcon(R.drawable.ic_searchwhite)
         tabLayout.getTabAt(2)!!.setIcon(R.drawable.ic_contact)
         tabLayout.getTabAt(3)!!.setIcon(R.drawable.ic_request)
+
 
 
     }
