@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 
 import com.app_knit.base.R
+import com.app_knit.base.repository.models.Tab
 import com.app_knit.base.viewmodels.BaseViewModel
 import com.app_knit.base.views.adapters.BottomTabsPagerAdapter
 import kotlinx.android.synthetic.main.fragment_base_tab_layout.*
@@ -20,6 +21,9 @@ import kotlinx.android.synthetic.main.fragment_bottom_navigation_tab_layout.view
  */
 class BottomNavigationTabLayoutFragment : BaseTabLayoutFragment() {
     override fun initTabs() {
+
+        val jh = mutableListOf<Tab>()
+        jh.add(Tab())
 
     }
 
