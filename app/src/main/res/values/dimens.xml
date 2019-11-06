@@ -20,4 +20,5 @@
     <dimen name="user_image_size_small">40dp</dimen>
     <dimen name="user_image_size_large">54dp</dimen>
     <dimen name="user_image_corner_radius">10dp</dimen>
+    <dimen name="default_tablayout_text_size">39sp</dimen>
 </resources>

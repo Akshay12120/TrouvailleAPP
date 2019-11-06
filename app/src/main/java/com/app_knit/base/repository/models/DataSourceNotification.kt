@@ -5,22 +5,22 @@ class DataSourceNotification{
         fun createData():ArrayList<BlogPostNotification>{
             val list= ArrayList<BlogPostNotification>()
             list.add(
-                    BlogPostNotification("Alex","Paris , France","15 Min ago")
+                    BlogPostNotification("Alex Added a travel trip for Eiffel Tower","Paris , France","15 Min ago")
             )
             list.add(
-                    BlogPostNotification("Samantha","Paris , France","15 Min ago")
+                    BlogPostNotification("Samantha sent you a Friend request","","15 Min ago")
             )
             list.add(
-                    BlogPostNotification("Harry","Paris , France","15 Min ago")
+                    BlogPostNotification("Harry Added a travel trip for Eiffel Tower ","Paris , France","15 Min ago")
             )
             list.add(
-                    BlogPostNotification("Jesica","Paris , France","15 Min ago")
+                    BlogPostNotification("Jesica Added a travel trip for Eiffel Tower","Paris , France","15 Min ago")
             )
             list.add(
-                    BlogPostNotification("Jack","Paris , France","15 Min ago")
+                    BlogPostNotification("Jack has upload a photo in travel trip","Paris , France","15 Min ago")
             )
             list.add(
-                    BlogPostNotification("Emily","Paris , France","15 Min ago")
+                    BlogPostNotification("Emily has shared a photo on Facebook Eiffel Tower","Paris , France","15 Min ago")
             )
             list.add(
                     BlogPostNotification("Alex","Paris , France","15 Min ago")

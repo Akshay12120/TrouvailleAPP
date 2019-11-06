@@ -5,7 +5,7 @@
     <color name="colorAccent">#F83F5B</color>
 
     <color name="colorTransparent">#00000000</color>
-    <color name="colorTitle">#346375</color>
+    <color name="colorTitle">#FFFFFFFF</color>
     <!--<color name="colorDivider">#E7E7E7</color>-->
     <color name="colorPrimaryTextDark">#464444</color>
     <color name="colorPrimaryTextDarkGreen">#147293</color>
@@ -33,6 +33,11 @@
     <color name="colorExpandView">#A0A0A0</color>
     <color name="tint">#03B5AA</color>
     <color name="maroon">#CF5F5F</color>
+    <color name="colorGray">#48565F</color>
+    <color name="colorGray2">#6B6B6B</color>
+    <color name="colorGray3">#919DA5</color>
+
+
 
     <color name="colorChatUnread">#e4f1f4</color>
 </resources>
