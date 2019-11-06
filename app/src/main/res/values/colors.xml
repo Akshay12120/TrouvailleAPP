@@ -12,7 +12,7 @@
     <color name="colorPrimaryTextGreen">#03B5AA</color>
     <color name="colorPrimaryTextBlue">#086788</color>
     <color name="colorPrimaryText">#4c5b5c</color>
-    <color name="colorPrimaryBackground">#FAFAFA</color>
+    <color name="colorPrimaryBackground">#CF5F5F</color>
     <!--<color name="colorSecondaryText">#676767</color>-->
     <color name="colorDisabledText">#999999</color>
     <color name="colorGrayBorder">#d9d9d9</color>

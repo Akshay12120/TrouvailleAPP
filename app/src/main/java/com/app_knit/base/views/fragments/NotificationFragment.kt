@@ -1,11 +1,13 @@
 package com.app_knit.base.views.fragments
 
 
+import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 
 import com.app_knit.base.R
@@ -25,9 +27,10 @@ class NotificationFragment : BaseRecyclerViewFragment() {
     override val viewModel: BaseViewModel?
         get() = null
     override fun setData() {
-        tvToolbarTitle.text= "Notifications"
-        tvToolbarTitle.setTextColor(resources.getColor(R.color.colorWhite))
-        toolbar.setBackgroundColor(resources.getColor(R.color.maroon))
+
+        tvToolbarTitle.setText(R.string.Notification)
+
+
         val data = DataSourceNotification.createData()
         notificationListAdapter.submitList(data)
     }
@@ -48,3 +51,4 @@ class NotificationFragment : BaseRecyclerViewFragment() {
 
 
 }
+

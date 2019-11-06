@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.Window
 import android.widget.Toolbar
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.FragmentManager
 
 import com.app_knit.base.R
@@ -34,7 +35,7 @@ class ConnectWithFriendTabLayoutFragment : BaseTabLayoutFragment() {
 
         setViewPager("Connect with Friends",toptabs)
 
-//        appBarLayout.setBackgroundColor(resources.getColor(R.color.maroon))
+        appBarLayout.setBackgroundColor(ContextCompat.getColor(activity!!,R.color.maroon))
         // set icons for tabs
         for (i in 0 until tabLayout.tabCount) {
             tabLayout.getTabAt(i)!!.setIcon(toptabs[i].tabIcon)
