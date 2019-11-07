@@ -28,7 +28,7 @@ class ConnectWithFriendTabLayoutFragment : BaseTabLayoutFragment() {
     override fun initTabs() {
         val toptabs = mutableListOf<Tab>()
         toptabs.add(Tab(FriendsFragment(),"Friends",R.drawable.ic_friends_selected,true))
-        toptabs.add(Tab(SearchFragment(),"Search",R.drawable.ic_searchwhite,true))
+        toptabs.add(Tab(SearchpageFragment(),"Search",R.drawable.ic_searchwhite,true))
         toptabs.add(Tab(ContactsFragment(),"Contacts",R.drawable.ic_contact,true))
         toptabs.add(Tab(RequestsFragment(),"Requests",R.drawable.ic_request,true))
 

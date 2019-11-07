@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:focusable="true"
     android:background="@color/colorWhite"
     android:clickable="true"
+    android:focusable="true"
     tools:context=".views.fragments.FriendsFragment">
 
     <androidx.recyclerview.widget.RecyclerView
@@ -16,39 +16,31 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toBottomOf="@id/grayLayout"/>
+        app:layout_constraintTop_toBottomOf="@id/grayLayout" />
 
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/grayLayout"
-            android:layout_width="340dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/drawable_searchlayout"
-            app:layout_constraintEnd_toEndOf="parent"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/grayLayout"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="4dp"
+        android:background="@drawable/drawable_searchlayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/StyleRegular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_explore"
+            android:drawablePadding="4dp"
+            android:text="@string/search_friends"
+            android:textColor="#63747F"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-            <TextView
-                style="@style/StyleRegular"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:drawableStart="@drawable/ic_explore"
-                android:drawablePadding="5dp"
-                android:text="Search Friends..."
-                android:textColor="#63747F"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"/>
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-
-
-
-
-
-
-
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
