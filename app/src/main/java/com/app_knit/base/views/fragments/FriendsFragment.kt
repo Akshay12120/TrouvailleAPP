@@ -11,7 +11,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.app_knit.base.R
 import com.app_knit.base.repository.models.DataSource
 import com.app_knit.base.viewmodels.BaseViewModel
+import com.app_knit.base.views.activities.BaseAppCompactActivity
+import com.app_knit.base.views.activities.doFragmentTransaction
 import com.app_knit.base.views.adapters.FriendListAdapter
+import kotlinx.android.synthetic.main.fragment_friends.*
 
 /**
  * A simple [Fragment] subclass.
@@ -26,6 +29,9 @@ class FriendsFragment : BaseRecyclerViewFragment() {
     override fun setData() {
         val data = DataSource.createDataset()
         friendlistadapter.submitList(data)
+
+        txTvSearchfriends.setOnClickListener { (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = SearchpageFragment(),isAddFragment = false) }
+
     }
 
     private val friendlistadapter = FriendListAdapter()

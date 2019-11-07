@@ -19,6 +19,7 @@ import kotlinx.android.synthetic.main.fragment_base_tab_layout.*
 abstract class BaseTabLayoutFragment : BaseFragment() {
 
     override fun init() {
+
         // uncomment if fragment has toolbar
         if (null != toolbar) {
             // remove toolbar background and elevation

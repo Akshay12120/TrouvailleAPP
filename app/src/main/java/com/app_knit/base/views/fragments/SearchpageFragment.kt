@@ -2,23 +2,30 @@ package com.app_knit.base.views.fragments
 
 
 import android.os.Bundle
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 
 import com.app_knit.base.R
+import com.app_knit.base.viewmodels.BaseViewModel
+import com.app_knit.base.views.activities.BaseAppCompactActivity
+import com.app_knit.base.views.activities.doFragmentTransaction
+import kotlinx.android.synthetic.main.fragment_searchpage.*
 
 /**
  * A simple [Fragment] subclass.
  */
-class SearchpageFragment : Fragment() {
+class SearchpageFragment : BaseFragment() {
+    override val layoutId: Int
+        get() = R.layout.fragment_searchpage
+    override val viewModel: BaseViewModel?
+        get() = null
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_searchpage, container, false)
+    override fun init() {
+        ivCancel.setOnClickListener { (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = ConnectWithFriendTabLayoutFragment(),isAddFragment = false) }
+    }
     }
 
 
-}
+
+
+

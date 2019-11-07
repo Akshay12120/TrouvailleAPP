@@ -10,6 +10,8 @@ import androidx.fragment.app.Fragment
 import com.app_knit.base.R
 import com.app_knit.base.repository.models.Tab
 import com.app_knit.base.viewmodels.BaseViewModel
+import com.app_knit.base.views.activities.BaseAppCompactActivity
+import com.app_knit.base.views.activities.doFragmentTransaction
 import kotlinx.android.synthetic.main.fragment_base_tab_layout.*
 
 /**
@@ -24,6 +26,10 @@ class ExploreFragment : BaseTabLayoutFragment() {
         // change the color of statusBar
         window.statusBarColor = ContextCompat.getColor(activity!!, R.color.maroon)
         appBarLayout.setBackgroundColor(ContextCompat.getColor(activity!!,R.color.maroon))
+        ivToolbarActionEnd.setImageResource(R.drawable.ic_searchwhite)
+        ivToolbarActionEnd.visibility = (view!!.visibility)
+        ivToolbarActionEnd.setOnClickListener { (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = SearchpageFragment(),isAddFragment = false) }
+
         setViewPager("Explore",tablist)
     }
 

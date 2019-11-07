@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.WindowManager
 import com.app_knit.base.R
 
 /**
@@ -28,6 +29,7 @@ abstract class BaseAppCompactActivity : AppCompatActivity() {
             window.statusBarColor = ContextCompat.getColor(this, R.color.colorTransparent)
             window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LAYOUT_STABLE or
                     View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+            //window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN)
         } else {
             window.statusBarColor = ContextCompat.getColor(this,
                     R.color.colorPrimaryDark)

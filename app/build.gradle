@@ -70,5 +70,6 @@ dependencies {
     implementation "com.squareup.moshi:moshi-kotlin:${libraries.moshi}"
     implementation "com.github.bumptech.glide:glide:${libraries.glide}"
     implementation 'de.hdodenhof:circleimageview:3.0.1'
+    implementation 'me.jessyan:autosize:1.1.2'
     annotationProcessor "com.github.bumptech.glide:compiler:${libraries.glide}"
 }
