@@ -12,7 +12,7 @@ class MainActivity : BaseAppCompactActivity() {
         get() = R.layout.activity_main
 
     override val isMakeStatusBarTransparent: Boolean
-        get() = true
+        get() = false
 
     override fun init() {
 

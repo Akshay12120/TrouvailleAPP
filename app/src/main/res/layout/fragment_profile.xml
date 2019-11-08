@@ -5,5 +5,29 @@
     android:layout_height="match_parent"
     android:focusable="true"
     android:background="@color/colorWhite"
+    android:fitsSystemWindows="false"
     android:clickable="true"
-    tools:context=".views.fragments.ProfileFragment"/>
+    tools:context=".views.fragments.ProfileFragment">
+    <androidx.appcompat.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/colorPrimaryBackground"
+        android:elevation="@dimen/toolbar_elevation"
+        app:theme="@style/DarkSearchViewTheme">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width = "294dp"
+            android:layout_height = "26dp"
+            android:gravity = "center"
+            android:background = "@drawable/drawable_whitesearchlayout"/>
+        <TextView
+            android:id="@+id/tvToolbarTitle"
+            style="@style/StyleToolbarTitle" />
+
+    </androidx.appcompat.widget.Toolbar>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,6 +3,7 @@ package com.app_knit.base.views.fragments
 
 import android.os.Bundle
 import android.view.*
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 
 import com.app_knit.base.R
@@ -21,10 +22,11 @@ class SearchpageFragment : BaseFragment() {
         get() = null
 
     override fun init() {
-        ivCancel.setOnClickListener { (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = ConnectWithFriendTabLayoutFragment(),isAddFragment = false) }
-    }
-    }
+        ivCancel.setOnClickListener { (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = BottomNavigationTabLayoutFragment(), isAddFragment = false) }
 
+
+    }
+}
 
 
 

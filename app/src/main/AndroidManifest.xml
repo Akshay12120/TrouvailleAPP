@@ -23,6 +23,7 @@
         <meta-data
             android:name="design_height_in_dp"
             android:value="640"/>
+
         <activity
             android:name="com.app_knit.base.views.activities.MainActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"

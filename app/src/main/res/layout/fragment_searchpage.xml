@@ -193,7 +193,7 @@
             android:drawableStart="@drawable/ic_location_placeholder"
             android:drawablePadding="4dp"
             android:text="@string/search"
-            android:textColor="#63747F"
+            android:textColor="@color/colorGray5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 

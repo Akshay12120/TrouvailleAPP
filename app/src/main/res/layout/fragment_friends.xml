@@ -13,6 +13,7 @@
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginTop = "20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,24 +24,27 @@
         android:id="@+id/grayLayout"
         android:layout_width="340dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:padding="4dp"
+        android:layout_marginTop="14dp"
+        android:padding="8dp"
         android:background="@drawable/drawable_searchlayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id= "@+id/txTvSearchfriends"
-            style="@style/StyleRegular"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:drawableStart="@drawable/ic_explore"
+        <EditText
+            android:id = "@+id/editTxt_search"
+            android:layout_width = "152dp"
+            android:layout_height = "wrap_content"
+            android:background="@android:color/transparent"
+            android:hint = "@string/search_friends"
+            android:drawableStart = "@drawable/ic_explore"
+            android:textColorHint="@color/colorGray5"
             android:drawablePadding="4dp"
-            android:text="@string/search_friends"
-            android:textColor="#63747F"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:minLines= "1"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

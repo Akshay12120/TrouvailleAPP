@@ -1,6 +1,8 @@
 package com.app_knit.base.views.fragments
 
 
+import android.content.res.ColorStateList
+import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -12,6 +14,7 @@ import com.app_knit.base.repository.models.Tab
 import com.app_knit.base.viewmodels.BaseViewModel
 import com.app_knit.base.views.adapters.BottomTabsPagerAdapter
 import com.app_knit.base.views.adapters.TabsAdapter
+import com.google.android.material.tabs.TabLayout
 import kotlinx.android.synthetic.main.fragment_base_tab_layout.*
 import kotlinx.android.synthetic.main.fragment_bottom_navigation_tab_layout.*
 import kotlinx.android.synthetic.main.fragment_bottom_navigation_tab_layout.tabLayout
@@ -24,16 +27,25 @@ class BottomNavigationTabLayoutFragment : BaseTabLayoutFragment() {
     override fun initTabs() {
 
         val bottomtabs = mutableListOf<Tab>()
-        bottomtabs.add(Tab(ExploreFragment(),"Explore",R.drawable.ic_explore,true))
-        bottomtabs.add(Tab(ConnectWithFriendTabLayoutFragment(),"Social",R.drawable.ic_social_selected,true))
+        bottomtabs.add(Tab(ExploreFragment(),"Explore",R.drawable.drawable_ic_explore_selector,true))
+        bottomtabs.add(Tab(ConnectWithFriendTabLayoutFragment(),"Social",R.drawable.drawable_ic_social_selector,true))
         bottomtabs.add(Tab(NotificationFragment(),"Notification",R.drawable.ic_notfication,true))
         bottomtabs.add(Tab(ProfileFragment(),"Profile",R.drawable.ic_profile,true))
+        tabLayout.setSelectedTabIndicatorColor(Color.parseColor("#C85050"))
 
+
+
+
+        // tabLayout.setOnTouchListener(View.OnTouchListener)
+        //tabLayout.setTabTextColors(Color.parseColor("#C85050"),Color.parseColor("#C85050"))
         setViewPager("",bottomtabs)
+
 
         // set icons for tabs
         for (i in 0 until tabLayout.tabCount) {
+
             tabLayout.getTabAt(i)!!.setIcon(bottomtabs[i].tabIcon)
+
         }
 
     }

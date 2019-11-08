@@ -30,7 +30,7 @@ class FriendsFragment : BaseRecyclerViewFragment() {
         val data = DataSource.createDataset()
         friendlistadapter.submitList(data)
 
-        txTvSearchfriends.setOnClickListener { (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = SearchpageFragment(),isAddFragment = false) }
+
 
     }
 

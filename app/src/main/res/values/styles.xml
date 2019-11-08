@@ -19,6 +19,7 @@
         <item name="android:itemTextAppearance">@style/myCustomMenuTextAppearance</item>
         <item name="popupMenuStyle">@style/StylePopupMenu</item>
         <item name="android:windowContentTransitions">true</item>
+
     </style>
 
     <!-- SearchView Style for light theme -->

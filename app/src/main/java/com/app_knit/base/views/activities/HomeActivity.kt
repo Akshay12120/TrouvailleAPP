@@ -8,7 +8,7 @@ class HomeActivity : BaseAppCompactActivity() {
         get() = R.layout.activity_home
 
     override val isMakeStatusBarTransparent: Boolean
-        get() = false
+        get() = true
 
     override fun init() {
     }
