@@ -67,11 +67,15 @@
     <string name="location_txt">Location</string>
     <string name="search_friends">Search Friends..gfgf</string>
     <string name="lets_travel">LET’S TRAVEL</string>
-
-
-
-
-
+    <string name="unfriend">Unfriend</string>
+    <string name="alexsmith">Alex Smith</string>
+    <string name="alex">Alex</string>
+    <string name="friends">12 Friends</string>
+    <string name="contries">Countries</string>
+    <string name="number4">4</string>
+    <string name="totalcontries">4 Countries </string>
+    <string name="alexrock">@alexrocks</string>
+    <string name="totalcites">8 Cities</string>
 
 
 </resources>

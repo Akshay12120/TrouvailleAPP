@@ -24,8 +24,8 @@ class ExploreFragment : BaseTabLayoutFragment() {
         tablist.add(Tab(VisitedbyFriendsFragment(),"Visited by Friends",0,true))
         val window = activity!!.window
         // change the color of statusBar
-        window.statusBarColor = ContextCompat.getColor(activity!!, R.color.maroon)
-        appBarLayout.setBackgroundColor(ContextCompat.getColor(activity!!,R.color.maroon))
+        window.statusBarColor = ContextCompat.getColor(activity!!, R.color.colorMaroon)
+        appBarLayout.setBackgroundColor(ContextCompat.getColor(activity!!,R.color.colorMaroon))
         ivToolbarActionEnd.setImageResource(R.drawable.ic_searchwhite)
         ivToolbarActionEnd.visibility = (view!!.visibility)
         ivToolbarActionEnd.setOnClickListener { (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = SearchpageFragment(),isAddFragment = false) }

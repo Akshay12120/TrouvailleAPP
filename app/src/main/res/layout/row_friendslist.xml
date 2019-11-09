@@ -12,7 +12,6 @@
         android:layout_height="40dp"
         android:src="@drawable/ic_avatar"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintDimensionRatio="1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart = "17dp"
         android:text="@string/jack"
-        android:textColor="#63747F"
+        android:textColor="@color/colorGray5"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@id/image"
@@ -37,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="@string/id"
-        android:textColor="#929495"
+        android:textColor="@color/colorGray7"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@id/image"
@@ -52,7 +51,7 @@
         android:layout_marginStart="16dp"
         android:text="@string/location"
         android:textSize="12sp"
-        android:textColor="#929495"
+        android:textColor="@color/colorGray7"
         app:layout_constraintStart_toEndOf="@id/image"
         app:layout_constraintTop_toBottomOf="@id/txTvsubTitle" />
 
@@ -62,8 +61,8 @@
         android:layout_width="86dp"
         android:layout_height="34dp"
         android:background="@drawable/rectanglebutton"
-        android:text="Unfriend"
-        android:textColor="#63747F"
+        android:text="@string/unfriend"
+        android:textColor="@color/colorGray5"
         android:paddingStart="2dp"
         android:textSize = "14sp"
         app:layout_constraintBottom_toBottomOf="parent"

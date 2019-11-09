@@ -33,11 +33,6 @@ class BottomNavigationTabLayoutFragment : BaseTabLayoutFragment() {
         bottomtabs.add(Tab(ProfileFragment(),"Profile",R.drawable.drawable_ic_profile_selector,true))
         tabLayout.setSelectedTabIndicatorColor(Color.parseColor("#C85050"))
 
-
-
-
-        // tabLayout.setOnTouchListener(View.OnTouchListener)
-        //tabLayout.setTabTextColors(Color.parseColor("#C85050"),Color.parseColor("#C85050"))
         setViewPager("",bottomtabs)
 
 
@@ -56,14 +51,5 @@ class BottomNavigationTabLayoutFragment : BaseTabLayoutFragment() {
     override val viewModel: BaseViewModel?
         get() = null
 
-//    override fun init() {
-//    val bottomTabsPagerAdapter = BottomTabsPagerAdapter(activity!!.supportFragmentManager)
-//        viewPager.adapter = bottomTabsPagerAdapter
-//        tabLayout.setupWithViewPager(viewPager)
-//        tabLayout.getTabAt(0)!!.setIcon(R.drawable.ic_explore)
-//        tabLayout.getTabAt(1)!!.setIcon(R.drawable.ic_social_selected)
-//        tabLayout.getTabAt(2)!!.setIcon(R.drawable.ic_notfication)
-//        tabLayout.getTabAt(3)!!.setIcon(R.drawable.ic_profile)
-//    }
 
 }

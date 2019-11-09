@@ -16,7 +16,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:tabIndicatorColor="@color/colorWhite"
-        app:tabSelectedTextColor="@color/maroon"
+        app:tabSelectedTextColor="@color/colorMaroon"
         app:tabIndicatorHeight="@dimen/tab_strip_height" />
 
     <androidx.viewpager.widget.ViewPager

@@ -34,12 +34,16 @@
     <color name="colorChatUnread">#e4f1f4</color>
     <!--some more color-->
     <color name="tint">#03B5AA</color>
-    <color name="maroon">#CF5F5F</color>
+    <color name="colorMaroon">#CF5F5F</color>
     <color name="colorGray">#48565F</color>
     <color name="colorGray2">#6B6B6B</color>
     <color name="colorGray3">#919DA5</color>
     <color name="colorGray4">#7E93A0</color>
     <color name="colorGrayBlue">#39495A</color>
     <color name="colorGray6">#ACACAC</color>
+    <color name="colorGray7">#929495</color>
     <color name="colorGray5">#63747F</color>
+    <color name="colorGray8">#555555</color>
+    <color name="colorMaroon2">#C85050</color>
+
 </resources>

@@ -25,7 +25,7 @@ class ConnectWithFriendTabLayoutFragment : BaseTabLayoutFragment() {
         setViewPager("Connect with Friends", toptabs)
 
 
-        appBarLayout.setBackgroundColor(ContextCompat.getColor(activity!!, R.color.maroon))
+        appBarLayout.setBackgroundColor(ContextCompat.getColor(activity!!, R.color.colorMaroon))
         // set icons for tabs
         for (i in 0 until tabLayout.tabCount) {
             tabLayout.getTabAt(i)!!.setIcon(toptabs[i].tabIcon)

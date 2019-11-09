@@ -9,7 +9,20 @@
     android:focusable="true"
     tools:context=".views.fragments.NotificationFragment">
 
-    <include layout="@layout/toolbar" />
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_marginTop = "20dp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/colorPrimaryBackground"
+        android:elevation="@dimen/toolbar_elevation"
+        app:theme="@style/DarkSearchViewTheme">
+        <TextView
+            android:id="@+id/tvToolbarTitle"
+            style="@style/StyleToolbarTitle" />
+    </androidx.appcompat.widget.Toolbar>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
