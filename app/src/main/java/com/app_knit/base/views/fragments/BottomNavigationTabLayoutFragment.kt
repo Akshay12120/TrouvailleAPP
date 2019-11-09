@@ -29,8 +29,8 @@ class BottomNavigationTabLayoutFragment : BaseTabLayoutFragment() {
         val bottomtabs = mutableListOf<Tab>()
         bottomtabs.add(Tab(ExploreFragment(),"Explore",R.drawable.drawable_ic_explore_selector,true))
         bottomtabs.add(Tab(ConnectWithFriendTabLayoutFragment(),"Social",R.drawable.drawable_ic_social_selector,true))
-        bottomtabs.add(Tab(NotificationFragment(),"Notification",R.drawable.ic_notfication,true))
-        bottomtabs.add(Tab(ProfileFragment(),"Profile",R.drawable.ic_profile,true))
+        bottomtabs.add(Tab(NotificationFragment(),"Notification",R.drawable.drawable_ic_notification_selector,true))
+        bottomtabs.add(Tab(ProfileFragment(),"Profile",R.drawable.drawable_ic_profile_selector,true))
         tabLayout.setSelectedTabIndicatorColor(Color.parseColor("#C85050"))
 
 

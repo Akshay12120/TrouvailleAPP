@@ -1,28 +1,14 @@
 package com.app_knit.base.views.fragments
 
 
-import android.os.Bundle
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import android.view.Window
-import android.widget.Toolbar
 import androidx.core.content.ContextCompat
-import androidx.fragment.app.FragmentManager
 
 import com.app_knit.base.R
 import com.app_knit.base.repository.models.Tab
 import com.app_knit.base.viewmodels.BaseViewModel
-import com.app_knit.base.views.activities.BaseAppCompactActivity
-import com.app_knit.base.views.activities.doFragmentTransaction
-import com.app_knit.base.views.adapters.TopTabspagerAdapter
-import com.google.android.material.tabs.TabLayout
 import kotlinx.android.synthetic.main.fragment_base_tab_layout.*
 import kotlinx.android.synthetic.main.fragment_base_tab_layout.tabLayout
-import kotlinx.android.synthetic.main.fragment_bottom_navigation_tab_layout.*
-import kotlinx.android.synthetic.main.fragment_friends.*
-import kotlinx.android.synthetic.main.toolbar.*
 
 /**
  * A simple [Fragment] subclass.
@@ -31,10 +17,10 @@ class ConnectWithFriendTabLayoutFragment : BaseTabLayoutFragment() {
 
     override fun initTabs() {
         val toptabs = mutableListOf<Tab>()
-        toptabs.add(Tab(FriendsFragment(), "Friends", R.drawable.ic_friends_selected, true))
-        toptabs.add(Tab(SearchFragment(), "Search", R.drawable.ic_searchwhite, true))
-        toptabs.add(Tab(ContactsFragment(), "Contacts", R.drawable.ic_contact, true))
-        toptabs.add(Tab(RequestsFragment(), "Requests", R.drawable.ic_request, true))
+        toptabs.add(Tab(FriendsFragment(), "Friends", R.drawable.drawable_ic_friends_selector, true))
+        toptabs.add(Tab(SearchFragment(), "Search", R.drawable.drawable_ic_search_selector, true))
+        toptabs.add(Tab(ContactsFragment(), "Contacts", R.drawable.drawable_ic_contacts_selector, true))
+        toptabs.add(Tab(RequestsFragment(), "Requests", R.drawable.drawable_ic_requests_selector, true))
 
         setViewPager("Connect with Friends", toptabs)
 
