@@ -45,6 +45,7 @@ class NotificationListAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() 
             blog_title.setText(blogPostNotification.name)
             blog_loaction.setText(blogPostNotification.loaction)
             blog_time.setText(blogPostNotification.time)
+            //using Glid for loading images from the internet to specify location
             Glide.with(itemView.context)
                     .load(blogPostNotification.profile)
                     .into(blog_profile)
