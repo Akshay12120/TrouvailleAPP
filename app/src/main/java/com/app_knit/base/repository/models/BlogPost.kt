@@ -6,13 +6,15 @@ data class BlogPost(
 
     var idname: String,
 
-    var loaction: String
+    var loaction: String,
+
+    var profile: String
 
 
 ) {
 
     override fun toString(): String {
-        return "BlogPost(title='$title',id='$idname', location='$loaction')"
+        return "BlogPost(title='$title',id='$idname', location='$loaction',profile='$profile')"
     }
 
 

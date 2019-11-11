@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.app_knit.base.R
 import com.app_knit.base.repository.models.BlogPostNotification
+import com.bumptech.glide.Glide
 import com.codingwithmitch.kotlinrecyclerviewexample.models.BlogPost
 import kotlinx.android.synthetic.main.row_friendslist.view.*
 import kotlinx.android.synthetic.main.row_friendslist.view.txtTvTitle
@@ -39,10 +40,15 @@ class NotificationListAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() 
         val blog_title = itemView.txtTvTitle
         val blog_loaction = itemView.txTvLocation
         val blog_time = itemView.txTvtime
+        val blog_profile = itemView.iv_profile_notification
         fun bind(blogPostNotification: BlogPostNotification) {
             blog_title.setText(blogPostNotification.name)
             blog_loaction.setText(blogPostNotification.loaction)
             blog_time.setText(blogPostNotification.time)
+            Glide.with(itemView.context)
+                    .load(blogPostNotification.profile)
+                    .into(blog_profile)
+
         }
     }
 

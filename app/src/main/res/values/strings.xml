@@ -86,6 +86,17 @@
     <string name="dominican_Republic">Dominican Republic</string>
     <string name="view_all">View all</string>
     <string name="photos">Photos</string>
+    <string name="sd">sd
+How to use ScrollView
+How to use ScrollView
+How to use ScrollView
+Using ScrollView is not very difficult. You can just add one to your layout and put whatever you want to scroll inside. ScrollView only takes one child so if you want to put a few things inside then you should make the first thing be something like a LinearLayout.
+How to use ScrollView
+Using ScrollView is not very difficult. You can just add one to your layout and put whatever you want to scroll inside. ScrollView only takes one child so if you want to put a few things inside then you should make the first thing be something like a LinearLayout.
+How to use ScrollView
+Using ScrollView is not very difficult. You can just add one to your layout and put whatever you want to scroll inside. ScrollView only takes one child so if you want to put a few things inside then you should make the first thing be something like a LinearLayout.
+Using ScrollView is not very difficult. You can just add one to your layout and put whatever you want to scroll inside. ScrollView only takes one child so if you want to put a few things inside then you should make the first thing be something like a LinearLayout.
+Using ScrollView is not very difficult. You can just add one to your layout and put whatever you want to scroll inside. ScrollView only takes one child so if you want to put a few things inside then you should make the first thing be something like a LinearLayout.</string>
 
 
 </resources>

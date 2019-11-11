@@ -5,7 +5,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.app_knit.base.R
+import com.bumptech.glide.Glide
 import com.codingwithmitch.kotlinrecyclerviewexample.models.BlogPost
+import kotlinx.android.synthetic.main.row_friendslist.*
 import kotlinx.android.synthetic.main.row_friendslist.view.*
 
 class FriendListAdapter:RecyclerView.Adapter<RecyclerView.ViewHolder>() {
@@ -37,11 +39,16 @@ class FriendListAdapter:RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
         val blog_title = itemView.txtTvTitle
         val blog_id = itemView.txTvsubTitle
+        val blog_image = itemView.iv_Friendsimage
         val blog_location = itemView.txTvlocation
         fun bind(blogPost: BlogPost) {
             blog_title.setText(blogPost.title)
             blog_id.setText(blogPost.idname)
             blog_location.setText(blogPost.loaction)
+            Glide.with(itemView.context)
+                    .load(blogPost.profile)
+                    .into(blog_image)
+
 
 
         }

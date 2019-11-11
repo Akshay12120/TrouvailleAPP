@@ -14,7 +14,9 @@ import com.app_knit.base.viewmodels.BaseViewModel
 import com.app_knit.base.views.activities.BaseAppCompactActivity
 import com.app_knit.base.views.activities.doFragmentTransaction
 import com.app_knit.base.views.adapters.FriendListAdapter
+import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.fragment_friends.*
+import kotlinx.android.synthetic.main.row_friendslist.*
 
 /**
  * A simple [Fragment] subclass.

@@ -7,7 +7,7 @@
     android:padding="16dp">
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/image"
+        android:id="@+id/iv_Friendsimage"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:src="@drawable/ic_avatar"
@@ -25,7 +25,7 @@
         android:textColor="@color/colorGray5"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@id/image"
+        app:layout_constraintStart_toEndOf="@id/iv_Friendsimage"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.1" />
 
@@ -39,7 +39,7 @@
         android:textColor="@color/colorGray7"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@id/image"
+        app:layout_constraintStart_toEndOf="@id/iv_Friendsimage"
         app:layout_constraintTop_toBottomOf="@id/txtTvTitle"
         app:layout_constraintVertical_bias="0" />
 
@@ -52,7 +52,7 @@
         android:text="@string/location"
         android:textSize="12sp"
         android:textColor="@color/colorGray7"
-        app:layout_constraintStart_toEndOf="@id/image"
+        app:layout_constraintStart_toEndOf="@id/iv_Friendsimage"
         app:layout_constraintTop_toBottomOf="@id/txTvsubTitle" />
 
     <Button
