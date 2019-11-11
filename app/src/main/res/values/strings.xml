@@ -76,6 +76,16 @@
     <string name="totalcontries">4 Countries </string>
     <string name="alexrock">@alexrocks</string>
     <string name="totalcites">8 Cities</string>
+    <string name="cities">Cities</string>
+    <string name="number8">8</string>
+    <string name="number10">10</string>
+    <string name="palces">Places</string>
+    <string name="build_travel_history">Build Travel History</string>
+    <string name="place_visited">Places Visited</string>
+    <string name="punta_cana">Punta Cana Dominican Republic</string>
+    <string name="dominican_Republic">Dominican Republic</string>
+    <string name="view_all">View all</string>
+    <string name="photos">Photos</string>
 
 
 </resources>
