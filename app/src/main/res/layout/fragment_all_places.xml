@@ -6,96 +6,23 @@
     android:background="@color/colorWhite41"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".views.fragments.AllPlacesFragment">
-<HorizontalScrollView
-    android:id="@+id/scrollView"
-    android:layout_width="match_parent"
-    android:layout_height="0dp"
-    android:paddingTop="10dp"
-    android:paddingBottom="10dp"
-    android:scrollbars="none"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent">
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <TextView
-            android:id="@+id/txTv_location_paris"
-            style="@style/StyleSemiBold"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:background="@drawable/drawable_colormaroon_text_stroke"
-            android:drawableStart="@drawable/ic_location_placeholder"
-            android:drawablePadding="4dp"
-            android:padding="6dp"
-            android:text="@string/location"
-            android:textAlignment="center"
-            android:textColor="@color/colorGray5"
-            android:textSize="12sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
-        <TextView
-            android:id="@+id/txTvmuseum"
-            style="@style/StyleSemiBold"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:background="@drawable/drawable_colormaroon_text_stroke"
-            android:padding="6dp"
-            android:text="@string/museums"
-            android:textColor="@color/colorGray5"
-            android:textSize="12sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@id/txTv_location_paris"
-            app:layout_constraintTop_toTopOf="parent"/>
-        <TextView
-            android:id="@+id/txTvlocation_paris2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:background="@drawable/drawable_colormaroon_text_stroke"
-            android:drawableStart="@drawable/ic_location_placeholder"
-            android:drawablePadding="4dp"
-            android:padding="6dp"
-            android:text="@string/location"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@id/txTvmuseum"
-            app:layout_constraintTop_toTopOf="parent"/>
-        <TextView
-            android:id="@+id/txTv_museum2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:background="@drawable/drawable_colormaroon_text_stroke"
-            android:padding="6dp"
-            android:text="@string/museums"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@id/txTvlocation_paris2"
-            app:layout_constraintTop_toTopOf="parent"/>
-        <TextView
-            android:id="@+id/txTv_museum3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:background="@drawable/drawable_colormaroon_text_stroke"
-            android:padding="6dp"
-            android:text="@string/museums"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@id/txTv_museum2"
-            app:layout_constraintTop_toTopOf="parent"/>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
-</HorizontalScrollView>
-<androidx.recyclerview.widget.RecyclerView
-    android:clipToPadding="false"
-    android:id="@+id/recyclerView"
-    app:layout_constraintTop_toBottomOf="@id/scrollView"
-    android:layout_width="match_parent"
-    android:layout_height="0dp"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recyclerView_horizontal" />
 </androidx.constraintlayout.widget.ConstraintLayout>
