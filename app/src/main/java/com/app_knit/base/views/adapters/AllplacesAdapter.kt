@@ -44,7 +44,9 @@ class AllplacesAdapter :RecyclerView.Adapter<RecyclerView.ViewHolder>(){
             blog_friendsvisited.setText(blogPostAllPlaces.friends)
             Glide.with(itemView.context)
                     .load(blogPostAllPlaces.imgplace)
+                    .placeholder(R.drawable.ic_profile)
                     .into(blog_imag)
+
         }
     }
 

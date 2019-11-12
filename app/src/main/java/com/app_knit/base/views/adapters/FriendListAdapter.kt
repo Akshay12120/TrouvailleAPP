@@ -47,6 +47,7 @@ class FriendListAdapter:RecyclerView.Adapter<RecyclerView.ViewHolder>() {
             blog_location.setText(blogPost.loaction)
             Glide.with(itemView.context)
                     .load(blogPost.profile)
+                    .placeholder(R.drawable.ic_profile)
                     .into(blog_image)
 
 

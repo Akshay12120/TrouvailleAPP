@@ -48,6 +48,7 @@ class NotificationListAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() 
             //using Glid for loading images from the internet to specify location
             Glide.with(itemView.context)
                     .load(blogPostNotification.profile)
+                    .placeholder(R.drawable.ic_profile)
                     .into(blog_profile)
 
         }
