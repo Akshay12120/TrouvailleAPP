@@ -15,9 +15,12 @@ import com.app_knit.base.repository.models.DataSourceAllplaces
 import com.app_knit.base.repository.models.DataSourceLocations
 import com.app_knit.base.repository.models.DataSourceNotification
 import com.app_knit.base.viewmodels.BaseViewModel
+import com.app_knit.base.views.activities.BaseAppCompactActivity
+import com.app_knit.base.views.activities.doFragmentTransaction
 import com.app_knit.base.views.adapters.AllplacesAdapter
 import com.app_knit.base.views.adapters.HorizontalRecyclerViewAdapter
 import kotlinx.android.synthetic.main.fragment_all_places.*
+import kotlinx.android.synthetic.main.row_all_placeslist.*
 
 /**
  * A simple [Fragment] subclass.
@@ -32,10 +35,13 @@ class AllPlacesFragment : BaseRecyclerViewFragment() {
         get() = null
 
     override fun setData() {
+
         val data = DataSourceAllplaces.createdata()
         allplacesAdapter.submitList(data)
+
         initRecyclerView()
         addDataSet()
+
     }
     private fun addDataSet(){
         val data = DataSourceLocations.createdata()
