@@ -27,7 +27,7 @@
                 android:id="@+id/iv_Arc_de_triomphe"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:scaleType="centerCrop"
+                android:scaleType="fitXY"
                 app:layout_constraintDimensionRatio="2.1"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -92,8 +92,10 @@
                 app:layout_constraintEnd_toEndOf="@id/iv_Arc_de_triomphe"
                 app:layout_constraintTop_toBottomOf="@id/iv_Arc_de_triomphe"
                 android:layout_marginTop="12dp"
+                android:layout_marginEnd="10dp"
                 android:padding="10dp"/>
             <TextView
+                android:id="@+id/txtv_80"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/_80"
@@ -102,7 +104,65 @@
                 app:layout_constraintTop_toTopOf="@id/txTv_visited"
                 app:layout_constraintStart_toStartOf="@id/loacation"
                 app:layout_constraintBottom_toBottomOf="@id/txTv_visited"
-                dra
+                android:drawableStart="@drawable/ic_small_like"
+                android:drawablePadding="4dp"/>
+            <TextView
+                android:id="@+id/txtv_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/colorGray10"
+                android:text="@string/_20"
+                app:layout_constraintStart_toEndOf="@id/txtv_80"
+                app:layout_constraintTop_toTopOf="@id/txtv_80"
+                android:drawableStart="@drawable/ic_small_dislike"
+                android:drawablePadding="4dp"
+                android:layout_marginStart="10dp"/>
+            <View
+                android:id="@+id/view"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/colorgray11"
+                app:layout_constraintTop_toBottomOf="@id/txTv_visited"
+                android:layout_marginTop="9dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+            <TextView
+                android:id="@+id/txtv_website"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/website"
+                android:textColor="@color/colorMaroon"
+                app:layout_constraintTop_toBottomOf="@id/view"
+                android:layout_marginTop="12dp"
+                android:drawableTop="@drawable/ic_website"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@id/view"
+                android:layout_marginStart="56dp"/>
+            <TextView
+                android:id="@+id/txtv_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/call"
+                android:textColor="@color/colorMaroon"
+                android:textSize="14sp"
+                android:layout_marginStart="80dp"
+                app:layout_constraintBottom_toBottomOf="@id/txtv_website"
+                app:layout_constraintStart_toEndOf="@id/txtv_website"
+                app:layout_constraintTop_toTopOf="@id/txtv_website"
+                android:drawableTop="@drawable/ic_call"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:textSize="14sp"
+                android:textColor="@color/colorMaroon"
+                app:layout_constraintTop_toTopOf="@id/txtv_call"
+                android:drawableTop="@drawable/ic_email"
+                app:layout_constraintBottom_toBottomOf="@id/txtv_call"
+                app:layout_constraintStart_toEndOf="@id/txtv_call"
+                android:layout_marginStart="80dp"/>
+
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

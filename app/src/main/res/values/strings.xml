@@ -92,7 +92,9 @@
     <string name="_80">80%</string>
     <string name="_20">20%</string>
     <string name="museums">Museums</string>
-
+    <string name="website">Website</string>
+    <string name="call">Call</string>
+    <string name="email">Email</string>
 
 
 </resources>
