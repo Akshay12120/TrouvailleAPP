@@ -65,7 +65,7 @@
     <string name="Notification">Notification</string>
     <string name="all_categories">All categories</string>
     <string name="location_txt">Location</string>
-    <string name="search_friends">Search Friends..gfgf</string>
+    <string name="search_friends">Search Friends....</string>
     <string name="lets_travel">LET’S TRAVEL</string>
     <string name="unfriend">Unfriend</string>
     <string name="alexsmith">Alex Smith</string>
@@ -95,6 +95,17 @@
     <string name="website">Website</string>
     <string name="call">Call</string>
     <string name="email">Email</string>
+    <string name="opening_hours">Opening Hours</string>
+    <string name="address">Address</string>
+    <string name="open_close_time">Open 10AM - Closes 11PM</string>
+    <string name="open">Open</string>
+    <string name="close">Closes</string>
+    <string name="addressfull">Place Charles de Gaulle, 75008 Paris, France</string>
+    <string name="visited_friends">9 Friends have visited this place</string>
+    <string name="john">John</string>
+    <string name="albert">Albert</string>
+    <string name="rose">Rose</string>
+    <string name="your_photos">YOUR PHOTOS</string>
 
 
 </resources>
