@@ -7,10 +7,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.app_knit.base.R
 import com.bumptech.glide.Glide
 import com.codingwithmitch.kotlinrecyclerviewexample.models.BlogPost
-import kotlinx.android.synthetic.main.row_friendslist.*
 import kotlinx.android.synthetic.main.row_friendslist.view.*
 
-class FriendListAdapter:RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class FriendListAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     private var items: List<BlogPost> = ArrayList()
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         return BlogViewHolder(
@@ -49,7 +48,6 @@ class FriendListAdapter:RecyclerView.Adapter<RecyclerView.ViewHolder>() {
                     .load(blogPost.profile)
                     .placeholder(R.drawable.ic_profile)
                     .into(blog_image)
-
 
 
         }

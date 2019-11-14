@@ -2,13 +2,13 @@ package com.codingwithmitch.kotlinrecyclerviewexample.models
 
 data class BlogPost(
 
-    var title: String,
+        var title: String,
 
-    var idname: String,
+        var idname: String,
 
-    var loaction: String,
+        var loaction: String,
 
-    var profile: String
+        var profile: String
 
 
 ) {

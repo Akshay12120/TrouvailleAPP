@@ -7,8 +7,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.app_knit.base.R
 import com.app_knit.base.repository.models.BlogPostNotification
 import com.bumptech.glide.Glide
-import com.codingwithmitch.kotlinrecyclerviewexample.models.BlogPost
-import kotlinx.android.synthetic.main.row_friendslist.view.*
 import kotlinx.android.synthetic.main.row_friendslist.view.txtTvTitle
 import kotlinx.android.synthetic.main.row_notificationlist.view.*
 
@@ -31,7 +29,9 @@ class NotificationListAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() 
 
     override fun getItemCount(): Int {
         return items.size
-    }fun submitList(blogList: List<BlogPostNotification>) {
+    }
+
+    fun submitList(blogList: List<BlogPostNotification>) {
         items = blogList
         notifyDataSetChanged()
     }

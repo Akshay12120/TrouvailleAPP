@@ -31,7 +31,7 @@ abstract class BaseFragment : androidx.fragment.app.Fragment() {
         super.onActivityCreated(savedInstanceState)
 
         if (null != toolbar) {
-            toolbar.setNavigationIcon(R.drawable.ic_cross)
+            toolbar.setNavigationIcon(null)
             toolbar.setNavigationOnClickListener {
                 activity?.supportFragmentManager?.popBackStack()
             }

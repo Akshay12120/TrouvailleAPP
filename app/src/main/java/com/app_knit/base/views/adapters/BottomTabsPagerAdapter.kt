@@ -3,23 +3,26 @@ package com.app_knit.base.views.adapters
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
-import com.app_knit.base.views.fragments.*
+import com.app_knit.base.views.fragments.ConnectWithFriendTabLayoutFragment
+import com.app_knit.base.views.fragments.ExploreFragment
+import com.app_knit.base.views.fragments.NotificationFragment
+import com.app_knit.base.views.fragments.ProfileFragment
 
-class BottomTabsPagerAdapter (fm: FragmentManager): FragmentPagerAdapter(fm){
+class BottomTabsPagerAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
 
     override fun getItem(position: Int): Fragment {
-        return when(position){
+        return when (position) {
             // Created four fragments
-            0->{
+            0 -> {
                 ExploreFragment()
             }
-            1->{
+            1 -> {
                 ConnectWithFriendTabLayoutFragment()
             }
-            2->{
+            2 -> {
                 NotificationFragment()
             }
-            else ->{
+            else -> {
                 ProfileFragment()
             }
 
@@ -33,17 +36,17 @@ class BottomTabsPagerAdapter (fm: FragmentManager): FragmentPagerAdapter(fm){
     }
 
     override fun getPageTitle(position: Int): CharSequence? {
-        return when(position){
-            0->
+        return when (position) {
+            0 ->
                 "Explore"
 
-            1->
+            1 ->
                 "Social"
 
-            2->
+            2 ->
                 "Notifications"
 
-            else-> {
+            else -> {
                 return "Profile"
             }
         }

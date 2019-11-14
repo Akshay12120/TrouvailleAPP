@@ -1,24 +1,12 @@
 package com.app_knit.base.views.fragments
 
 
-import android.content.res.ColorStateList
 import android.graphics.Color
-import android.os.Bundle
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-
 import com.app_knit.base.R
 import com.app_knit.base.repository.models.Tab
 import com.app_knit.base.viewmodels.BaseViewModel
-import com.app_knit.base.views.adapters.BottomTabsPagerAdapter
-import com.app_knit.base.views.adapters.TabsAdapter
-import com.google.android.material.tabs.TabLayout
-import kotlinx.android.synthetic.main.fragment_base_tab_layout.*
 import kotlinx.android.synthetic.main.fragment_bottom_navigation_tab_layout.*
-import kotlinx.android.synthetic.main.fragment_bottom_navigation_tab_layout.tabLayout
-import kotlinx.android.synthetic.main.fragment_bottom_navigation_tab_layout.viewPager
 
 /**
  * A simple [Fragment] subclass.
@@ -27,13 +15,13 @@ class BottomNavigationTabLayoutFragment : BaseTabLayoutFragment() {
     override fun initTabs() {
 
         val bottomtabs = mutableListOf<Tab>()
-        bottomtabs.add(Tab(ExploreFragment(),"Explore",R.drawable.drawable_ic_explore_selector,true))
-        bottomtabs.add(Tab(ConnectWithFriendTabLayoutFragment(),"Social",R.drawable.drawable_ic_social_selector,true))
-        bottomtabs.add(Tab(NotificationFragment(),"Notification",R.drawable.drawable_ic_notification_selector,true))
-        bottomtabs.add(Tab(ProfileFragment(),"Profile",R.drawable.drawable_ic_profile_selector,true))
+        bottomtabs.add(Tab(ExploreFragment(), "Explore", R.drawable.drawable_ic_explore_selector, true))
+        bottomtabs.add(Tab(ConnectWithFriendTabLayoutFragment(), "Social", R.drawable.drawable_ic_social_selector, true))
+        bottomtabs.add(Tab(NotificationFragment(), "Notification", R.drawable.drawable_ic_notification_selector, true))
+        bottomtabs.add(Tab(ProfileFragment(), "Profile", R.drawable.drawable_ic_profile_selector, true))
         tabLayout.setSelectedTabIndicatorColor(Color.parseColor("#C85050"))
 
-        setViewPager("",bottomtabs)
+        setViewPager("", bottomtabs)
 
 
         // set icons for tabs

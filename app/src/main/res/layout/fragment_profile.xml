@@ -19,8 +19,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:background="@color/colorPrimaryBackground">
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="220dp"
+            android:layout_width="275dp"
             app:layout_constraintStart_toStartOf="parent"
+            android:layout_gravity = "center"
             app:layout_constraintEnd_toEndOf="parent"
             android:background="@drawable/drawable_whitesearchlayout"
             android:layout_height="26dp">
@@ -37,7 +38,6 @@
                 android:layout_marginStart = "7dp"
                 android:background="@android:color/transparent"/>
 
-
         </androidx.constraintlayout.widget.ConstraintLayout>
         <ImageView
             android:id="@+id/ivToolbarActionEnd"
@@ -45,7 +45,6 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="20dp"
             android:layout_gravity="end"
-            android:padding="@dimen/activity_vertical_margin"
             android:visibility="gone" />
     </androidx.appcompat.widget.Toolbar>
 

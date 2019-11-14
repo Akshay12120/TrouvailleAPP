@@ -1,14 +1,9 @@
 package com.app_knit.base.views.fragments
 
 
-import android.os.Bundle
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-
 import com.app_knit.base.R
 import com.app_knit.base.repository.models.DataSourceAllplaces
 import com.app_knit.base.repository.models.DataSourceLocations
@@ -21,7 +16,7 @@ import kotlinx.android.synthetic.main.fragment_all_places.*
  * A simple [Fragment] subclass.
  */
 class VisitedbyFriendsFragment : BaseRecyclerViewFragment() {
-    private  lateinit var blogAdapter: HorizontalRecyclerViewAdapter
+    private lateinit var blogAdapter: HorizontalRecyclerViewAdapter
 
     override val layoutId: Int
         get() = R.layout.fragment_all_places
@@ -35,18 +30,20 @@ class VisitedbyFriendsFragment : BaseRecyclerViewFragment() {
         addDataSet()
 
     }
-    private fun addDataSet(){
+
+    private fun addDataSet() {
         val data = DataSourceLocations.createdata()
         blogAdapter.submitList(data)
     }
-    private fun initRecyclerView(){
+
+    private fun initRecyclerView() {
         recyclerView_horizontal.apply {
-            layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL,false)
+            layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
             // LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
             blogAdapter = HorizontalRecyclerViewAdapter()
             adapter = blogAdapter
         }
-        recyclerView_horizontal.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL,false)
+        recyclerView_horizontal.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
         //blogAdapter = HorizontalRecyclerViewAdapter()
         recyclerView_horizontal.adapter = blogAdapter
     }
@@ -58,10 +55,10 @@ class VisitedbyFriendsFragment : BaseRecyclerViewFragment() {
         get() = null
     override val isShowRecyclerViewDivider: Boolean
         get() = false
+
     override fun onPullDownToRefresh() {
 
     }
-
 
 
 }
