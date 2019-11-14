@@ -14,7 +14,7 @@ import com.app_knit.base.views.adapters.FriendListAdapter
  */
 class SearchFragment : BaseRecyclerViewFragment() {
     override val layoutId: Int
-        get() = R.layout.fragment_search
+        get() = R.layout.fragment_friends
     override val viewModel: BaseViewModel?
         get() = null
 

@@ -50,7 +50,11 @@
     <color name="colorBluelight">#5F8ACF</color>
     <color name="colorGray10">#7C7777</color>
     <color name="colorgray11">#DEDEDE</color>
+    <color name="colorGray12">#595A5A</color>
+    <color name="colorGray13">#818181</color>
     <color name="colorGreen">#08AD28</color>
     <color name="colorGrayBrown">#4D4D4D</color>
+    <color name="colorBlack1">#2B2727</color>
+    <color name="colorGrayLight">#9D9D9D</color>
 
 </resources>

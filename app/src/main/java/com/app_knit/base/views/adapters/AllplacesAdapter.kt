@@ -38,6 +38,7 @@ class AllplacesAdapter :RecyclerView.Adapter<RecyclerView.ViewHolder>(){
         val blog_name = itemView.txTv_triomphe
         val blog_location = itemView.txTvLocation
         val blog_friendsvisited = itemView.txTv_two_friends
+
         fun bind(blogPostAllPlaces: BlogPostAllPlaces){
             blog_name.setText(blogPostAllPlaces.name)
             blog_location.setText(blogPostAllPlaces.loaction)

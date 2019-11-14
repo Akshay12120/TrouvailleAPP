@@ -57,7 +57,7 @@
     <string name="search">Search</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <!--custom names-->
+    <!--custom names of trouvaille app-->
     <string name="jack">Jack</string>
     <string name="samantha">Samantha</string>
     <string name="id">jkrocks</string>
@@ -107,6 +107,14 @@
     <string name="rose">Rose</string>
     <string name="your_photos">YOUR PHOTOS</string>
     <string name="friends_photo">FRIENDS’ PHOTO</string>
+    <string name="travel_tips">TRAVEL TIPS</string>
+    <string name="txtv_tips">It is a long established fact that a reader will be distracted by the readable content of a page…</string>
+    <string name="more">More</string>
+    <string name="edit">Edit</string>
+    <string name="remove">Remove</string>
+    <string name="time_date">11:30PM 5 Aug</string>
+    <string name="must_visit_at_night">Must visit at night</string>
+    <string name="john_smith">John Smith</string>
 
 
 </resources>

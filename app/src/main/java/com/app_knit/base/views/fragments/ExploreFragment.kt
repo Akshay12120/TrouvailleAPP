@@ -29,7 +29,7 @@ class ExploreFragment : BaseTabLayoutFragment() {
         appBarLayout.setBackgroundColor(ContextCompat.getColor(activity!!,R.color.colorMaroon))
         ivToolbarActionEnd.setImageResource(R.drawable.ic_searchwhite)
         ivToolbarActionEnd.visibility = (view!!.visibility)
-        ivToolbarActionEnd.setOnClickListener { (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = ArcdeTriompheFragment(),isAddFragment = false) }
+        ivToolbarActionEnd.setOnClickListener { (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = SearchpageFragment(),isAddFragment = false) }
         setViewPager("Explore",tablist)
         tabLayout.tabTextColors = ContextCompat.getColorStateList(activity!!,R.color.colorWhite)
 

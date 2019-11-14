@@ -19,7 +19,7 @@ import com.app_knit.base.views.adapters.FriendListAdapter
 class RequestsFragment : BaseRecyclerViewFragment() {
 
     override val layoutId: Int
-        get() = R.layout.fragment_requests
+        get() = R.layout.fragment_friends
     override val viewModel: BaseViewModel?
         get() = null
 
