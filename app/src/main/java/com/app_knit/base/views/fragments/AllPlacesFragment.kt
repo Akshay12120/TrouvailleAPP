@@ -45,14 +45,16 @@ class AllPlacesFragment : BaseRecyclerViewFragment() {
             // LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
             blogAdapter = HorizontalRecyclerViewAdapter()
             adapter = blogAdapter
+
         }
         recyclerView_horizontal.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
         //blogAdapter = HorizontalRecyclerViewAdapter()
         recyclerView_horizontal.adapter = blogAdapter
+
     }
 
 
-    private val allplacesAdapter = AllplacesAdapter()
+    private val allplacesAdapter by lazy {   AllplacesAdapter(this)}
     override val recyclerViewAdapter: RecyclerView.Adapter<*>?
         get() = allplacesAdapter
     override val layoutManager: RecyclerView.LayoutManager?

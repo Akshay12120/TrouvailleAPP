@@ -27,7 +27,7 @@
         android:textSize="14sp"
         android:maxLines="2"
         android:minLines="1"
-        android:ems = "12"
+        android:ems = "14"
         android:ellipsize="end"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@id/iv_profile_notification"

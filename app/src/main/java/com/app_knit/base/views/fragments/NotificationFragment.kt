@@ -1,6 +1,7 @@
 package com.app_knit.base.views.fragments
 
 
+import android.text.SpannableString
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import com.app_knit.base.R

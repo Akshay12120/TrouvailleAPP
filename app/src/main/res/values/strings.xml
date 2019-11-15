@@ -115,6 +115,7 @@
     <string name="time_date">11:30PM 5 Aug</string>
     <string name="must_visit_at_night">Must visit at night</string>
     <string name="john_smith">John Smith</string>
+    <string name="added_traveltips">Added a travel trip for</string>
 
 
 </resources>

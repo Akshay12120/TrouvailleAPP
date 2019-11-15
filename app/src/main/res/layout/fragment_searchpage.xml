@@ -26,7 +26,7 @@
         android:id="@+id/ivCancel"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="28dp"
         android:src="@drawable/ic_cross_red"
         app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
         app:layout_constraintTop_toTopOf="parent" />
@@ -186,14 +186,16 @@
         app:layout_constraintStart_toStartOf="@id/guidelineStart"
         app:layout_constraintTop_toBottomOf="@id/txTvLocation">
 
-        <TextView
+        <EditText
             style="@style/StyleRegular"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableStart="@drawable/ic_location_placeholder"
             android:drawablePadding="4dp"
-            android:text="@string/search"
-            android:textColor="@color/colorGray5"
+            android:hint="@string/search"
+            android:background="@null"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/colorGray5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 

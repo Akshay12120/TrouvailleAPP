@@ -48,7 +48,7 @@ class VisitedbyFriendsFragment : BaseRecyclerViewFragment() {
         recyclerView_horizontal.adapter = blogAdapter
     }
 
-    private val allplacesAdapter = AllplacesAdapter()
+    private val allplacesAdapter by lazy {  AllplacesAdapter(this) }
     override val recyclerViewAdapter: RecyclerView.Adapter<*>?
         get() = allplacesAdapter
     override val layoutManager: RecyclerView.LayoutManager?
