@@ -22,6 +22,7 @@ class NotificationFragment : BaseRecyclerViewFragment() {
     override fun setData() {
 
         tvToolbarTitle.setText(R.string.Notification)
+
         val data = DataSourceNotification.createData()
         notificationListAdapter.submitList(data)
     }

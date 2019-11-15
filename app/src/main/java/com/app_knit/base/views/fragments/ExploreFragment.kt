@@ -18,9 +18,9 @@ class ExploreFragment : BaseTabLayoutFragment() {
         val tablist = mutableListOf<Tab>()
         tablist.add(Tab(AllPlacesFragment(),"All palces",R.drawable.drawable_color_allplace_selector,true))
         tablist.add(Tab(VisitedbyFriendsFragment(),"Visited by Friends",R.drawable.drawable_color_allplace_selector,true))
-        val window = activity!!.window
+        //val window = activity!!.window
         // change the color of statusBar
-        window.statusBarColor = ContextCompat.getColor(activity!!, R.color.colorMaroon)
+        activity!!.window.statusBarColor = ContextCompat.getColor(activity!!, R.color.colorMaroon)
         appBarLayout.setBackgroundColor(ContextCompat.getColor(activity!!,R.color.colorMaroon))
         ivToolbarActionEnd.setImageResource(R.drawable.ic_searchwhite)
         ivToolbarActionEnd.visibility = (view!!.visibility)
