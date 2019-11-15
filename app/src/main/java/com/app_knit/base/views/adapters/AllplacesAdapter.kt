@@ -1,8 +1,13 @@
 package com.app_knit.base.views.adapters
 
+import android.app.Activity
+import android.content.ContentValues.TAG
+import android.content.Context
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.app_knit.base.R
 import com.app_knit.base.repository.models.BlogPostAllPlaces
@@ -14,7 +19,7 @@ import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.row_all_placeslist.view.*
 
 
-class  AllplacesAdapter  : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class  AllplacesAdapter   : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     private var items: List<BlogPostAllPlaces> = ArrayList()
 
@@ -47,20 +52,27 @@ class  AllplacesAdapter  : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         notifyDataSetChanged()
     }
 
-    class Blogviewholder constructor(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    class Blogviewholder constructor(itemView: View) : RecyclerView.ViewHolder(itemView)  {
         val blog_imag = itemView.iv_image_places
         val blog_name = itemView.txTv_triomphe
         val blog_location = itemView.txTvLocation
         val blog_friendsvisited = itemView.txTv_two_friends
 
-        init {
-            itemView.setOnClickListener { (this as BaseAppCompactActivity).doFragmentTransaction(fragManager = this as supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = SearchpageFragment(), isAddFragment = false) }
-        }
+
+//        init {
+//            blog_name.setOnClickListener { (ArcdeTriompheFragment() as BaseAppCompactActivity).doFragmentTransaction(fragManager = ArcdeTriompheFragment()!!.supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = SearchpageFragment(), isAddFragment = false) }
+//
+//            //itemView.setOnClickListener { (ArcdeTriomphe as BaseAppCompactActivity).doFragmentTransaction(fragManager = ArcdeTriomphe()!!supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = SearchpageFragment(), isAddFragment = false) }
+//        }
 
         fun bind(blogPostAllPlaces: BlogPostAllPlaces) {
             blog_name.setText(blogPostAllPlaces.name)
+            blog_name.setOnClickListener{
+                Log.d(TAG, "test")
+            }
             blog_location.setText(blogPostAllPlaces.loaction)
             blog_friendsvisited.setText(blogPostAllPlaces.friends)
+
 
             Glide.with(itemView.context)
                     .load(blogPostAllPlaces.imgplace)
