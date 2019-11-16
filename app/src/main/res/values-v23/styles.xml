@@ -19,7 +19,11 @@
         <item name="android:windowLightStatusBar">false</item>
         <item name="android:windowContentTransitions">true</item>
         <item name="android:windowFullscreen">false</item>
+    </style>
 
+        <!--switch themes-->
 
+    <style name="SwitchCompatTheme" >
+        <item name="colorControlActivated">@color/colorMaroon</item>
     </style>
 </resources>
