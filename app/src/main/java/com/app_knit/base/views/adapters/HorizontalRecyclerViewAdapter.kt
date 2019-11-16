@@ -32,6 +32,7 @@ class HorizontalRecyclerViewAdapter : RecyclerView.Adapter<RecyclerView.ViewHold
 
     fun submitList(blogList: List<BlogPostLocations>) {
         items = blogList
+        notifyDataSetChanged()
     }
 
     class BlogviewHolder constructor(itemView: View) : RecyclerView.ViewHolder(itemView) {

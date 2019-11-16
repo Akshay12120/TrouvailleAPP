@@ -36,7 +36,7 @@ class NotificationListAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() 
         notifyDataSetChanged()
     }
 
-    class BlogViewHolder constructor(itemView: View) : RecyclerView.ViewHolder(itemView) {
+   inner class BlogViewHolder constructor(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val blog_title = itemView.txtTvTitle
         val blog_loaction = itemView.txTvLocation
         val blog_time = itemView.txTvtime

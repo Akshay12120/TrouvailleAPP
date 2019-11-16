@@ -31,7 +31,6 @@ class ArcdeTriompheFragment : BaseFragment() {
         ivToolbarActionStart.visibility = (View.VISIBLE)
         ivToolbarActionStart.setOnClickListener { activity?.supportFragmentManager?.popBackStack() }
 
-
         Glide.with(this)
                 .load("https://www.unjourdeplusaparis.com/wp-content/uploads/2014/01/arc-de-triomphe-paris-800x500.jpg")
                 .placeholder(R.drawable.ic_profile)

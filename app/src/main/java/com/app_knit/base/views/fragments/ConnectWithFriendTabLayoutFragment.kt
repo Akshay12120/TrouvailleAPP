@@ -28,8 +28,6 @@ class ConnectWithFriendTabLayoutFragment : BaseTabLayoutFragment() {
         for (i in 0 until tabLayout.tabCount) {
             tabLayout.getTabAt(i)!!.setIcon(toptabs[i].tabIcon)
         }
-
-
     }
 
     override val layoutId: Int
