@@ -80,7 +80,7 @@ abstract class BaseTabLayoutFragment : BaseFragment() {
                 val tabViewChild = vgTab.getChildAt(i)
                 if (tabViewChild is TextView) {
                     tabViewChild.textSize= resources.getDimension(R.dimen.default_tablayout_text_size)
-                    tabViewChild.setTextColor(resources.getColor(R.color.colorGray3))
+                   // tabViewChild.setTextColor(resources.getColor(R.color.colorGray3))
 //                    tabViewChild.typeface = Typeface.createFromAsset(activity.getAssets(),
 //                            activity.getString(R.string.font_proximanovasemibold))
                 }

@@ -124,6 +124,23 @@
     <string name="feedback">Feedback</string>
     <string name="privacy">Privacy</string>
     <string name="terms_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="signup_visitedbyfriends">Please Sign Up to View places those visited by your friends</string>
+    <string name="sign_up_now">SIGN UP NOW</string>
+    <string name="signup_connections">Please Sign Up to View your Connections</string>
+    <string name="make_your_profile">Please Sign Up to make your Profile</string>
+    <string name="welcome_to_trouvaille">Welcome\nto Trouvaille</string>
+    <string name="trouvaille">Trouvaille</string>
+    <string name="username_email">Username / Email</string>
+    <string name="password">Password</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="next">Next</string>
+    <string name="setup_account">Set Up Your Account</string>
+    <string name="account">Account</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="username">Username</string>
 
 
 </resources>

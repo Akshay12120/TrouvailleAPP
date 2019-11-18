@@ -204,7 +204,7 @@
                 android:layout_marginBottom="100dp"
                 app:layout_constraintEnd_toEndOf="@id/guidelineEnd"/>
             <androidx.appcompat.widget.SwitchCompat
-                android:id="@+id/switch_Location"
+                android:id="@+id/switchbtn_Location"
                 android:layout_width="wrap_content"
                 android:checked="true"
                 android:layout_height="wrap_content"
@@ -212,14 +212,14 @@
                 app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
                 app:layout_constraintTop_toTopOf="@id/txtv_location"/>
             <androidx.appcompat.widget.SwitchCompat
-                android:id="@+id/switch_Contacts"
+                android:id="@+id/switchbtn_Contacts"
                 android:layout_width="wrap_content"
                 android:theme="@style/SwitchCompatTheme"
                 android:layout_height="wrap_content"
                 app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
                 app:layout_constraintTop_toTopOf="@id/txtv_contacts"/>
             <androidx.appcompat.widget.SwitchCompat
-                android:id="@+id/switch_Notification"
+                android:id="@+id/switchbtn_Notification"
                 android:layout_width="wrap_content"
                 android:checked="true"
                 android:theme="@style/SwitchCompatTheme"

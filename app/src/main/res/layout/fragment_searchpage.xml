@@ -14,13 +14,13 @@
         style="@style/StyleSemiBold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintVertical_bias="0.1"
         android:text="@string/search"
         android:textColor="@color/colorGray"
         android:textSize="17sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@id/guidelineStart"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
 
     <ImageView
         android:id="@+id/ivCancel"
@@ -72,10 +72,10 @@
         android:id="@+id/ivMuseum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintHorizontal_bias="0.1"
         android:layout_marginTop="20dp"
         android:src="@drawable/ic_museums"
         app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="@id/guidelineStart"
         app:layout_constraintTop_toBottomOf="@id/view" />
 
@@ -103,10 +103,10 @@
         android:id="@+id/ivBeaches"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintHorizontal_bias="0.2"
         android:layout_marginTop="20dp"
         android:src="@drawable/ic_beaches"
         app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+        app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toEndOf="@id/ivLandmark"
         app:layout_constraintTop_toBottomOf="@id/view" />
 
@@ -114,10 +114,10 @@
         android:id="@+id/ivOutdoor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintHorizontal_bias="0.12"
         android:layout_marginTop="24dp"
         android:src="@drawable/ic_outdoor"
         app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+        app:layout_constraintHorizontal_bias="0.12"
         app:layout_constraintStart_toStartOf="@id/guidelineStart"
         app:layout_constraintTop_toBottomOf="@id/ivMuseum" />
 
@@ -145,10 +145,10 @@
         android:id="@+id/ivBeaches2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintHorizontal_bias="0.2"
         android:layout_marginTop="24dp"
         android:src="@drawable/ic_beaches"
         app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+        app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toEndOf="@id/ivLandmark2"
         app:layout_constraintTop_toBottomOf="@id/ivBeaches" />
 
@@ -190,10 +190,10 @@
             style="@style/StyleRegular"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@null"
             android:drawableStart="@drawable/ic_location_placeholder"
             android:drawablePadding="4dp"
             android:hint="@string/search"
-            android:background="@null"
             android:inputType="textPersonName"
             android:textColorHint="@color/colorGray5"
             app:layout_constraintStart_toStartOf="parent"
@@ -214,9 +214,9 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:background="@drawable/drawable_rectanglemarronbutton"
         android:text="@string/lets_travel"
-        android:layout_marginEnd="16dp"
         android:textColor="@color/colorWhite"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
