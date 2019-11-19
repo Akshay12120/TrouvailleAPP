@@ -2,6 +2,7 @@ package com.app_knit.base.views.fragments
 
 
 import android.graphics.Color
+import android.view.View
 import androidx.fragment.app.Fragment
 import com.app_knit.base.R
 import com.app_knit.base.repository.models.Tab
@@ -20,6 +21,9 @@ class BottomNavigationTabLayoutFragment : BaseTabLayoutFragment() {
         bottomtabs.add(Tab(NotificationFragment(), "Notification", R.drawable.drawable_ic_notification_selector, true))
         bottomtabs.add(Tab(ProfileFragment(), "Profile", R.drawable.drawable_ic_profile_selector, true))
         tabLayout.setSelectedTabIndicatorColor(Color.parseColor("#C85050"))
+
+        val window = activity!!.window
+        window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_VISIBLE
 
         setViewPager("", bottomtabs)
 

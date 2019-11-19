@@ -60,6 +60,14 @@
         <item name="android:fontFamily">@font/font_semi_bold</item>
     </style>
 
+    <style name="StyleRegularGalaxybt" parent="StyleText">
+        <item name="android:fontFamily">@font/font_regular_galaxybt</item>
+    </style>
+
+    <style name="StyleFuturamediumbt" parent="StyleText">
+        <item name="android:fontFamily">@font/font_futuramediumbt</item>
+    </style>
+
     <!--<style name="StyleBold" parent="StyleText">-->
     <!--<item name="android:fontFamily">@font/font_bold</item>-->
     <!--</style>-->
@@ -196,6 +204,9 @@
     </style>
     <style name="SwitchCompatTheme" >
         <item name="colorControlActivated">@color/colorMaroon</item>
+    </style>
+    <style name="EditTextCustomLinecolor">
+        <item name="colorAccent">@color/colorMaroon</item>
     </style>
 
 
