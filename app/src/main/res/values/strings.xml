@@ -146,6 +146,9 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="enter_email_resetpasword">Enter your email address to reset your password.</string>
     <string name="submit">SUBMIT</string>
+    <string name="signin_google">SIGN IN WITH GOOGLE</string>
+    <string name="sign_in_with_facebook">SIGN IN WITH FACEBOOK</string>
+    <string name="explore_as_guest">EXPLORE AS GUEST</string>
 
 
 </resources>
