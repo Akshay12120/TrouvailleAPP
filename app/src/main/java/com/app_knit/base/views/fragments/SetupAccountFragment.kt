@@ -13,13 +13,15 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat
 import com.app_knit.base.R
 import com.app_knit.base.viewmodels.BaseViewModel
+import com.app_knit.base.views.activities.BaseAppCompactActivity
+import com.app_knit.base.views.activities.doFragmentTransaction
 import kotlinx.android.synthetic.main.fragment_setup_account.*
 import kotlinx.android.synthetic.main.fragment_welcometo_trouvaille.*
 
 /**
  * A simple [Fragment] subclass.
  */
-class SetupAccountFragment : BaseFragment() {
+class SetupAccountFragment : BaseFragment(),View.OnClickListener {
     override val layoutId: Int
         get() = R.layout.fragment_setup_account
     override val viewModel: BaseViewModel?
@@ -31,6 +33,21 @@ class SetupAccountFragment : BaseFragment() {
         val indexend = index + txt2.length
         txt.setSpan(ForegroundColorSpan(ContextCompat.getColor(activity!!, R.color.colorMaroon)), index, indexend, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
         txtv_setupAccount.setText(txt, TextView.BufferType.SPANNABLE)
+        activity!!.window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
+        activity!!.window.statusBarColor = ContextCompat.getColor(activity!!, R.color.colorWhite)
+        iv_backBtn.setOnClickListener(this)
+        txtv_next.setOnClickListener(this)
+    }
+
+    override fun onClick(p0: View?) {
+        when(p0!!.id){
+            R.id.iv_backBtn ->{
+                (activity!!.supportFragmentManager.popBackStack())
+            }
+            R.id.txtv_next ->{
+                (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = WelcomeTrouvailleFragment(), isAddFragment = false)
+            }
+        }
     }
 
 

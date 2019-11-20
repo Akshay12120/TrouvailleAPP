@@ -29,7 +29,7 @@ class ArcdeTriompheFragment : BaseFragment() {
        tvToolbarTitle.setText(R.string.arc_de_triomphe)
         ivToolbarActionStart.setBackgroundResource(R.drawable.ic_backbutton)
         ivToolbarActionStart.visibility = (View.VISIBLE)
-        ivToolbarActionStart.setOnClickListener { activity?.supportFragmentManager?.popBackStack() }
+        ivToolbarActionStart.setOnClickListener{ ( activity!!.supportFragmentManager.popBackStack() )}
 
         Glide.with(this)
                 .load("https://www.unjourdeplusaparis.com/wp-content/uploads/2014/01/arc-de-triomphe-paris-800x500.jpg")

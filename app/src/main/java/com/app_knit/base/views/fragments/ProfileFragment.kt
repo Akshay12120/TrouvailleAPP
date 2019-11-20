@@ -9,6 +9,8 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.app_knit.base.R
 import com.app_knit.base.viewmodels.BaseViewModel
+import com.app_knit.base.views.activities.BaseAppCompactActivity
+import com.app_knit.base.views.activities.doFragmentTransaction
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.fragment_profile.*
 
@@ -67,6 +69,7 @@ class ProfileFragment : BaseFragment() {
                 .into(iv_circleimage)
         ivToolbarActionEnd.setImageResource(R.drawable.ic_settings)
         ivToolbarActionEnd.visibility = (view!!.visibility)
+        ivToolbarActionEnd.setOnClickListener {  (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = SettingsFragment(), isAddFragment = false) }
 
     }
 

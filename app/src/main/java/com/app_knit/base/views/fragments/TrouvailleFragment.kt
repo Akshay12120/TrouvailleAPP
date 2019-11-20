@@ -26,17 +26,15 @@ class TrouvailleFragment : BaseFragment(),View.OnClickListener {
         get() = null
 
     override fun init() {
-//        signinBtn.setOnClickListener { (activity as BaseAppCompactActivity).doFragmentTransaction(fragManager = activity!!.supportFragmentManager, containerViewId = R.id.flFragContainerMain, fragment = WelcomeTrouvailleFragment(), isAddFragment = false) }
-//        signin_GoogleBtn.setOnClickListener { () }
+        activity!!.window.statusBarColor = ContextCompat.getColor(requireContext(), R.color.colorTransparent)
+        activity!!.window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LAYOUT_STABLE or
+                View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
         signinBtn.setOnClickListener(this)
         signin_GoogleBtn.setOnClickListener(this)
         signin_FacebookBtn.setOnClickListener(this)
         txtv_create_account.setOnClickListener(this)
-        //activity!!.window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
-        //activity!!.window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_VISIBLE
-        activity!!.window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
-        //activity!!.window.statusBarColor = ContextCompat.getColor(activity!!, R.color.colorTransparent)
-        //activity!!.window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LAYOUT_STABLE or View.SYSTEM_UI_FLAG_FULLSCREEN
+
+
     }
 
     override fun onClick(p0: View?) {

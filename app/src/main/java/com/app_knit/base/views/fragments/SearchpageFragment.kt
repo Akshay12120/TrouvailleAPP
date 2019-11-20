@@ -22,7 +22,7 @@ class SearchpageFragment : BaseFragment() {
         get() = null
 
     override fun init() {
-        ivCancel.setOnClickListener { activity?.supportFragmentManager?.popBackStack() }
+        ivCancel.setOnClickListener { (activity!!.supportFragmentManager.popBackStack()) }
         //hide the status bar
         activity!!.window.decorView.systemUiVisibility = SYSTEM_UI_FLAG_LAYOUT_STABLE or SYSTEM_UI_FLAG_FULLSCREEN
 
